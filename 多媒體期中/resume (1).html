@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷 - 胡程昕</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5e0c3, #fff2e0);
+            color: #5b3a29;
+        }
+        header {
+            background: linear-gradient(135deg, #cfa978, #e6c7a1);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        section {
+            margin: 20px;
+            padding: 25px;
+            background-color: rgba(255, 245, 230, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #a97855;
+            border-bottom: 2px solid #d7b89d;
+            padding-bottom: 8px;
+            font-weight: 600;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d7b89d;
+        }
+        .slogan {
+            font-style: italic;
+            font-size: 1.8em;
+            color: #5b3a29;
+            margin-top: 15px;
+            background-color: #f3d7b1;
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .skills .skill strong {
+            color: #a97855;
+        }
+        .skill-bar {
+            background-color: #f0e0d6;
+            border-radius: 10px;
+            height: 18px;
+            overflow: hidden;
+        }
+        .skill-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #cfa978, #e6c7a1);
+            border-radius: 10px;
+        }
+        .experience-item img {
+            width: 210px;
+            height: 150px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid #d7b89d;
+        }
+        .contact a {
+            margin: 0 12px;
+            padding: 6px 14px;
+            border-radius: 8px;
+            background: #f0d8b0;
+            color: #5b3a29;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .contact a:hover {
+            background: #e6c7a1;
+            color: #3d2516;
+        }
+        footer {
+            background: #cfa978;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>個人履歷</h1>
+    </header>
+
+    <section id="personal-info">
+        <h2>個人基本資訊</h2>
+        <div class="profile">
+            <img src="images/me.jpg" alt="胡程昕照片" />
+            <div>
+                <p><strong>姓名：</strong> 胡程昕</p>
+                <p><strong>性別：</strong> 男</p>
+                <p><strong>年齡：</strong> 19歲</p>
+                <p><strong>出生日期：</strong> 2005/11/21</p>
+                <p><strong>自我介紹：</strong> 自認是個熱情且細心的人，個性樂觀、擅於團隊合作。優點是專注細節、分析能力強；缺點是偶爾過於完美主義。個人特質包括創新思維和解決問題的能力。興趣包括閱讀書籍、跑步和騎車。</p>
+                <div class="slogan">"心上目前木 簡字爾旁人"</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>個人專業與技能</h2>
+        <div class="skills">
+            <div class="skill">
+                <strong>Python:</strong>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <strong>Java:</strong>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <strong>HTML:</strong>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>個人經歷</h2>
+        <h3>工作經歷</h3>
+        <article class="experience-item">
+            <img src="images/work.jpg" alt="工作經歷圖片" />
+            <div class="experience-text">
+                <h4>酒吧調酒師 - River bar since 1996 (2025~2026)</h4>
+                <p>在River bar擔任調酒師，專職調酒與服務。服務熱心且專業，深受顧客喜愛。在店內與夥伴合作無間，在忙碌期間也能得心應手。這個經歷讓我學會了如何在壓力下高效工作，並培養了強大的問題解決能力。</p>
+            </div>
+        </article>
+
+        <h3>課程活動</h3>
+        <article class="experience-item">
+            <img src="images/inclass.jpg" alt="課程活動圖片1" />
+            <div class="experience-text">
+                <h4>高中程式設計課程專案 - Arduino自走車 (2024)</h4>
+                <p>在高中期間參與程式設計課程，與團隊合作開發了一個Arduino自走車。這是我首次接觸程式語言，儘管困難，但非常有趣。</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡資訊</h2>
+        <div class="contact">
+        <a href="https://www.facebook.com/profile.php?id=100012387006089&locale=zh_TW">Facebook</a>
+        <a href="https://www.instagram.com/chengxin._.1121/">Instagram</a>
+        <a href="mailto:hwusam0@gmail.com">Email</a>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2025 Alan . All rights reserved.</p>
+    </footer>
+</body>
+</html>
